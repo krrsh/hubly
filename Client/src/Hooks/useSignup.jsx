@@ -12,7 +12,7 @@ export const useSignup = () => {
       return;
     }
     // else
-    const response = await fetch(`http://localhost:4000/api/users/signup`, {
+    const response = await fetch(`https://hubly-mbkb.onrender.com/api/users/signup`, {
     // const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/users/signup`, {
       method: "POST",
       headers: { "Content-type": "application/json" },

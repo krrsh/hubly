@@ -33,7 +33,7 @@ useEffect(() => {
 useEffect(() => {
   const fetchCustomChatData = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/customChats");
+      const res = await axios.get("https://hubly-mbkb.onrender.com/api/customChats");
       if (res.data[0]) {
         const data = res.data[0];
         setDocId(data._id); // set id to update later
@@ -46,7 +46,7 @@ useEffect(() => {
         });
       } else {
         // Create new one if no data exists
-        const newRes = await axios.post("http://localhost:4000/api/customChats", {
+        const newRes = await axios.post("https://hubly-mbkb.onrender.com/api/customChats", {
           welcomeMsg: welcomeMsg,
           headingColor: "#33475B",
           chatSectionColor: "#EEEEEE",
@@ -339,7 +339,7 @@ useEffect(() => {
                 try {
                   setEditmode({ ...editmode, msg: false });
             
-                  await axios.patch(`http://localhost:4000/api/customChats/${docId}`, {
+                  await axios.patch(`https://hubly-mbkb.onrender.com/api/customChats/${docId}`, {
                     welcomeMsg,
                   });
 
