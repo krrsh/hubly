@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+}
+.homeContainer{
+    font-family: 'Barlow';
+    background-color: #EBF1F9;
+    position: relative;
+}

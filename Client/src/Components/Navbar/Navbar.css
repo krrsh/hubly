@@ -1,0 +1,61 @@
+.logoContainer{
+    margin-left: 100px;
+}
+.logo{
+    height: 50px;
+    cursor: pointer;
+}
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBF1F9;
+}
+.buttonContainer{
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 80px;
+}
+.signupBtn{
+    background-color: #244779;
+    color: #FFFFFF;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+.loginBtn{
+    font-weight: 500;
+}
+.loginBtn:hover{
+    cursor: pointer;
+    color: #173a6b;
+    text-decoration: underline;
+}
+.signupBtn:hover{
+    cursor: pointer;
+    background-color: #1756af;
+}
+@media screen and (max-width:600px) {
+    .logoContainer{
+        margin-left: 30px;
+    }
+    .logo{
+        height: 30px;
+    }
+    .buttonContainer{
+        gap: 10px;
+        margin-right: 10px;
+    }
+    .signupBtn{
+        border-radius: 5px;
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .loginBtn{
+        font-size: 12px;
+    }
+}

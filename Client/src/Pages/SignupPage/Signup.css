@@ -1,0 +1,136 @@
+.signupContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.signupImage{
+    height: 100vh;
+    width: 30%;
+}
+.signup_formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 30px;
+}
+.signup_formContainer .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 250px;
+    gap: 20px;
+    width: 100%;
+}
+.signup_formContainer .form .titleDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup_formContainer .form .titleDiv h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.signup_formContainer .form .titleDiv p{
+    text-decoration: underline;
+    color: #4831D4;
+    cursor: pointer;
+}
+.signup_formContainer .form .titleDiv p:hover{
+    color: #9080fa;
+}
+.signup_formContainer .form h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+.signup_formContainer .form div{
+    display: flex;
+    flex-direction: column;
+}
+.signup_formContainer .form div p{
+    color: #666666;
+    font-size: 10px;
+    font-family: 'Poppins';
+}
+.signup_formContainer .form div input{
+    height: 30px;
+    outline: none;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    color: black;
+    border-radius: 5px;
+    padding: 0px 6px;
+}
+.signup_formContainer .signinPageBtn{
+    font-family: 'Poppins';
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #C3C3C3;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: 0.1s ease-in-out;
+}
+.signup_formContainer .signinPageBtn:hover{
+    background-color: #b3b3b3;
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+}
+.signup_formContainer .form .termsCheckBox{
+    flex-direction: row;
+    gap: 10px;
+    align-items: normal;
+    width: 55%;
+}
+.signup_formContainer .form .termsCheckBox input{
+    cursor: pointer;
+}
+.signup_formContainer .form .termsCheckBox p{
+    font-size: 9px;
+}
+.signup_formContainer .form .termsCheckBox p span{
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Poppins';
+}
+.signup_formContainer .form .termsCheckBox p span:hover{
+    color:#5786c6;
+}
+.signupContainer .terms{
+    color: #676B5F;
+    width: 100%;
+    margin: 60px 100px 0px 250px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Inter';
+}
+.signupContainer .terms span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signupContainer .terms span:hover{
+    color:#5786c6;
+}
+
+
+@media screen and (max-width:1000px) {
+    .signupImage{
+        display: none;
+    }
+    .signup_formContainer{
+        width: 100%;
+    }
+    .signup_formContainer .form{
+        margin: 50px 10px;
+        gap: 20px;
+        width: 100%;
+    }
+    .signupContainer .terms{
+        width: 100%;
+        margin: 60px 100px 0px 0px;
+        text-align: center;
+    }
+}

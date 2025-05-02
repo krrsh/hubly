@@ -1,0 +1,79 @@
+.footerContainer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 50px;
+    justify-content: center;
+}
+.footer_Container{
+    padding: 100px 50px 100px 100px;
+    display: flex;
+    gap: 200px;
+}
+.footerContainer div p{
+    font-weight: 500;
+}
+.footerContainer div{
+    width: 200px;
+}
+.footerContainer div ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center
+}
+.footerContainer .mediaContainer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+}
+.footerContainer .mediaContainer ul li{
+    transition: 0.05s ease-in-out;
+    cursor: pointer;
+}
+.footerContainer .mediaContainer ul li:hover{
+    transform:scale(1.2);
+}
+
+@media screen and (max-width:1050px) {
+    .footer_Container{
+        padding-top: 10px;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+@media screen and (max-width:650px) {
+    .footerContainer div{
+        width: 100px;
+    }
+    .footer_Container{
+        padding: 10px 50px 100px 70px;
+    }
+    .footerContainer{
+        gap: 20px;
+    }
+    .footerContainer div ul{
+        margin-top: 5px;
+        gap: 5px;
+        font-size: 10px;
+    }
+    .footerContainer .mediaContainer ul{
+        flex-direction: row;
+        gap: 10px;
+        position: absolute;
+        bottom: -70px;
+        right: 10px;
+    }
+    .footerContainer .mediaContainer ul li img{
+        height: 20px;
+    }
+}

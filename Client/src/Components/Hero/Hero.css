@@ -1,0 +1,186 @@
+.heroContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.heroTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 45%;
+}
+.heroTextContainer h1{
+    color: #30404D;
+    font-size: 54px;
+    font-weight: bold;
+}
+.heroTextContainer p{
+    color: #30404D;
+    font-size: 16px;
+    width: 90%;
+}
+.heroTextContainer .buttonContainer{
+    margin-right: 0;
+    gap: 50px;
+}
+.getStartedBtn{
+    background-color: #244779;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    transition: transform 0.1s ease-in-out;
+}
+.getStartedBtn:hover{
+    cursor: pointer;
+    background-color: #1756af;
+    transform: scale(1.02);
+    box-shadow: #1756af 0px 5px 15px;
+}
+
+.watchvidBtn{
+    color: #30404D;
+    background-color: #EBF1F9;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.watchvidBtn span{
+    border:2px solid #244779;
+    padding: 4px 8px 4px 10px;
+    border-radius: 100%;
+}
+.watchvidBtn:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    transform: scale(1.2);
+    text-shadow: 0 0 8px #5a7497, 0 0 70px #244779;
+}
+
+.imageContainer{
+    position: relative;
+    margin-right: 100px;
+}
+.heroImg{
+    height: 400px;
+}
+.calender{
+    position: absolute;
+    height: 240px;
+    left: -95px;
+    bottom: -170px
+}
+.graph{
+    position: absolute;
+    height: 140px;
+    right: -105px;
+    bottom: -85px;
+}
+.profile{
+    position: absolute;
+    height: 70px;
+    top: -50px;
+    right: -100px;
+}
+
+@media screen and (max-width:1000px) {
+    .heroContainer{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .heroTextContainer{
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .imageContainer{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:700px) {
+    .heroTextContainer h1{
+        font-size: 34px;
+    }
+    .heroTextContainer{
+        width: 75%;
+    }
+    .imageContainer{
+        margin-right: 0px;
+    }
+    .heroImg{
+        height: 300px;
+    }
+    .calender{
+        height: 150px;
+        left: -55px;
+        bottom: -95px
+    }
+    .graph{
+        height: 90px;
+        right: -45px;
+        bottom: -35px;
+    }
+    .profile{
+        height: 50px;
+        top: -25px;
+        right: -40px;
+    }
+}
+@media screen and (max-width:400px) {
+    .heroTextContainer h1{
+        font-size: 30px;
+    }
+    .heroTextContainer p{
+        font-size: 12px;
+    }
+    .heroContainer p{
+        font-size: 12px;
+    }
+    .heroTextContainer .buttonContainer{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .getStartedBtn{
+        gap: 4px;
+        padding: 4px 10px;
+        border-radius: 4px;
+    }
+    .watchvidBtn{
+        gap: 5px;
+        font-size: 12px;
+    }
+    .watchvidBtn span{
+        padding: 4px 4px 1px 7px;
+    }
+    .heroImg{
+        height: 150px;
+    }
+    .calender{
+        height: 80px;
+        left: -45px;
+        bottom: -50px
+    }
+    .graph{
+        height: 50px;
+        right: -35px;
+        bottom: -20px;
+    }
+    .profile{
+        height: 30px;
+        top: -15px;
+        right: -40px;
+    }
+}

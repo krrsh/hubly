@@ -1,0 +1,52 @@
+ .brandsContainer {
+    margin-top: 200px;
+    background-color: #d8e3f1;
+    padding: 30px 0;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  .brandsContainer:hover{
+    cursor: pointer;
+  }
+  
+  .scrollContent {
+    display: inline-block;
+    animation: scrollX 20s linear infinite;
+  }
+  
+  .scrollContent img {
+    height: 50px;
+    margin: 0 40px;
+    vertical-align: middle;
+    transition: 0.05s ease-in-out;
+  }
+  .scrollContent img:hover{
+    transform: scale(1.1);
+  }
+  
+  .brandsContainer:hover .scrollContent {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scrollX {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    .brandsContainer {
+      margin-top: 100px;
+      background-color: #d8e3f1;
+      padding: 15px 0;
+    }
+    .scrollContent img {
+      height: 30px;
+      margin: 0 15px;
+    }
+  }
+  

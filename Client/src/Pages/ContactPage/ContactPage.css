@@ -1,0 +1,304 @@
+.contactPageContainer {
+  display: flex;
+  height: 100vh;
+}
+.contactPageContainer .contactPageContentContainer {
+  display: flex;
+  width: 100%;
+}
+.contactPageContainer .contactPageContentContainer .chatContainer {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  padding: 10px 5px;
+  border-right: 1px solid rgba(1, 1, 1, 0.2);
+}
+.contactPageContainer .contactPageContentContainer .chatContainer h4 {
+  color: #6a6b70;
+  font-size: 18px;
+  margin: 20px 0 0 10px;
+}
+.contactPageContainer .contactPageContentContainer .chatContainer .chatsText {
+  margin-top: 80px;
+  margin-left: 4px;
+  color: #888888;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  z-index: 1;
+}
+.contactPageContainer
+  .contactPageContentContainer
+  .chatContainer
+  .lineAfterChat {
+  margin-top: 3px;
+}
+.contactPageContainer
+  .contactPageContentContainer
+  .chatContainer
+  .chatsSection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactPageContainer
+  .contactPageContentContainer
+  .chatContainer
+  .chatsSection
+  .userSection {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.contactPageContainer
+  .contactPageContentContainer
+  .chatContainer
+  .chatsSection
+  .userSection
+  div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.contactPageContainer
+  .contactPageContentContainer
+  .chatContainer
+  .chatsSection
+  .userSection
+  .chatNum {
+  color: #5e9bd5;
+  font-size: 12px;
+  font-weight: 600;
+}
+.contactPageContainer
+  .contactPageContentContainer
+  .chatContainer
+  .chatsSection
+  .userSection
+  .textMessage {
+  color: #9a9b9d;
+  font-size: 10px;
+}
+.ticketContainer {
+  font-family: "Inter";
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-right: 1px solid rgba(1, 1, 1, 0.2);
+}
+.ticketContainer .lineOnDate {
+  position: relative;
+}
+.ticketContainer .lineOnDate hr {
+  background-color: rgba(1, 1, 1, 0.2);
+  border: none;
+  height: 0.5px;
+  margin: 0 20px 20px 20px;
+}
+.ticketContainer .lineOnDate p {
+  padding: 0 10px;
+  z-index: 2;
+  position: absolute;
+  bottom: -7px;
+  left: 45%;
+  color: #8c8e92;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+.ticketHeadingSection {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  padding: 10px 10px 20px 20px;
+  font-size: 14px;
+  color: #86898c;
+}
+.ticketContainer .profileSectionOnMessage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+.ticketContainer .profileSectionOnMessage .chatNum {
+  color: #5e9bd5;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ticketContainer .profileSectionOnMessage .textMessage {
+  color: #9a9b9d;
+  font-size: 10px;
+}
+.ticketContainer .profileSectionOnMessage div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.textArea {
+  font-family: "Inter";
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d1d6da;
+  padding: 20px;
+  font-size: 14px;
+  color: rgba(1, 1, 1, 0.75);
+  outline: none;
+  resize: none;
+}
+.textArea::placeholder {
+  color: rgba(1, 1, 1, 0.35);
+}
+.messageSection {
+  position: relative;
+}
+.sendBtn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+.profileContainer {
+  max-height: 100vh;
+  overflow-y : auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  font-family: "Inter";
+  width: 32%;
+}
+.profileContainer h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #184e7f;
+  margin-top: 5px;
+}
+.profileContainer .imgContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #939598;
+}
+.profileContainer .imgContainer p {
+  font-size: 12px;
+}
+.profileContainer .personalDataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profileContainer .personalDataContainer .personalData {
+  height: 30px;
+}
+.personalData {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1.5px solid #d1d6da;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+.personalData p {
+  font-size: 14px;
+  color: #808080;
+}
+.personalData img {
+  height: 20px;
+}
+.profileContainer .teammatesSection {
+  position: relative;
+  cursor: pointer;
+}
+.profileContainer .teammatesSection  .personalData {
+  height: 40px;
+  border-radius: 15px;
+  padding: 15px;
+}
+.profileContainer .teammatesSection  .personalData  img {
+  height: 30px;
+}
+.profileContainer .teammatesSection .ddArrow {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+  }
+.ticketStatusOptions{
+    margin-bottom: 10px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+.ticketStatusOptions.show{
+    max-height: 200px;
+    opacity: 1;
+}
+.ticketStatusOptions p{
+    border: 1px solid #d1d6da;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #808080;
+}
+.ticketStatusOptions .resolved{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 0px;
+}
+.ticketStatusOptions .unresolved{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.ticketStatusOptions .resolved:hover{
+    background-color: #dedede;
+}
+.ticketStatusOptions .unresolved:hover{
+    background-color: #dedede;
+}
+.teammatesOptions{
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+.teammatesOptions.show{
+    overflow: auto;
+    max-height: 400px;
+    opacity: 1;
+}
+.teammatesOptions ul li div{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1.5px solid #d1d6da;
+    border-bottom: none;
+    padding: 10px 20px;
+}
+.teammatesOptions ul li div p {
+    font-size: 14px;
+    color: #808080;
+  }
+.teammatesOptions ul li div:hover{
+    background-color: #dedede;
+  }
+.teammatesOptions ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  .teammatesOptions li:first-child div {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .teammatesOptions li:last-child div {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom: 1.5px solid #d1d6da;
+  }

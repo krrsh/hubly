@@ -1,0 +1,50 @@
+.navIconsContainer{
+    height: auto;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgba(1, 1, 1, 0.2);
+}
+.navoptionsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.navoptionsContainer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+}
+.navoptionsContainer div p{
+    font-size: 10px;
+    color: #424242;
+    font-family: 'Inter';
+    text-align: center;
+}
+.navoptionsContainer img{
+    height: 20px;
+    width: 20px;
+}
+.navoptionsContainer div{
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.navoptionsContainer div:hover{
+    transform: scale(1.2);
+}
+.navIconsContainer .logo img{
+    height: 50px;
+    width: 50px;
+    transform: none;
+}
+.navIconsContainer .logo:hover{
+    transform: none;
+    cursor: default;
+}

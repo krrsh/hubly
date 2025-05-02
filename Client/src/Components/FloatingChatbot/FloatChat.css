@@ -1,0 +1,73 @@
+.floatChatContainer{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+.floatChatContainer .floatChatBot{
+    width: 350px;
+}
+.floatChatContainer .floatChatBot .chatHeadingContainer{
+    height: 50px;
+  }
+.floatChatContainer .floatChatBot .centerChatSection{
+    height: 380px;
+  }
+.floatChatContainer .floatChatBot .centerChatSection .firstTextDisplayed p{
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.floatChatContainer .floatChatBot .centerChatSection .firstTextDisplayed{
+    gap: 10px;
+}
+.floatChatContainer .floatChatBot .centerChatSection .firstTextDisplayed img{
+    height: 30px;
+}
+  .floatChatContainer .floatChatBot .centerChatSection .chat2 {
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-left: 40px;
+}
+.floatChatContainer .floatChatBot .introSection{
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    top: 110px;
+    left: 50px;
+}
+.floatChatContainer .floatChatBot .introSection input::placeholder{
+    font-size: 8px;
+}
+.floatChatContainer .floatChatBot .introSection input{
+    font-size: 8px;
+}
+.floatChatContainer .floatChatBot .introSection button{
+    font-size: 8px;
+    margin: 10px auto 0px;
+    border: none;
+    justify-content: center;
+    width: 70%;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.floatChatContainer .floatChatBot .inputChatSection input{
+    height: 50px;
+    padding: 5px 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 12px;
+}
+.floatChatContainer .floatChatBot .inputChatSection input::placeholder{
+    font-size: 12px;
+}
+.floatChatContainer .floatChatBot .inputChatSection img{
+    right: 15px;
+    top: 15px;
+    height: 20px;
+}

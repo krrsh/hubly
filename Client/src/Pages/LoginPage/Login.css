@@ -1,0 +1,123 @@
+.loginContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.loginImage{
+    height: 100vh;
+    width: 30%;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    width: 40%;
+}
+.formContainer .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 200px;
+    gap: 30px;
+    width: 100%;
+    font-family: 'Poppins';
+}
+.formContainer .form h3{
+    font-size: 25px;
+}
+.formContainer .form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.formContainer .form div p{
+    color: #666666;
+    font-size: 12px;
+}
+.formContainer .form div input{
+    height: 30px;
+    outline: none;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    color: black;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+.formContainer .loginpageBtn{
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #C3C3C3;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+}
+.formContainer .loginpageBtn:hover{
+    background-color: #b3b3b3;
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+}
+.forgetPass{
+    font-family: 'Inter';
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #244779;
+}
+.donthaveaccnt, .terms{
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Inter';
+}
+.donthaveaccnt span{
+    font-family: 'Inter';
+    text-decoration: underline;
+    cursor: pointer;
+    color:#244779;
+}
+.donthaveaccnt span:hover, .terms span:hover, .forgetPass:hover{
+    color:#5786c6;
+}
+.terms{
+    color: #676B5F;
+    width: 100%;
+    margin: 100px 100px 0px 200px;
+}
+.terms span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1050px) {
+    .formContainer{
+        padding-left: 10px;
+        width: 30%;
+    }
+    .formContainer .form{
+        margin: 20px 150px;
+        gap: 30px;
+        width: 100%;
+    }
+    .loginImage{
+        width: 40%;
+    }
+}
+@media screen and (max-width:800px) {
+    .loginImage{
+        display: none;
+    }
+    .formContainer{
+        width: 100%;
+    }
+    .formContainer .form{
+        margin: 50px;
+    }
+    .terms{
+        margin: 100px;
+        text-align: center;
+    }
+}
