@@ -6,8 +6,10 @@ import CalenderImg from '../../assets/CalendarImg.png';
 import graphImg from '../../assets/graphImg.png';
 import profileImg from '../../assets/profileImg.png';
 import rightArrow from '../../assets/rightArrow.png'
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="heroContainer">
       <div className="heroTextContainer">
@@ -17,7 +19,7 @@ const Hero = () => {
           one powerful platform.
         </p>
         <div className="buttonContainer">
-          <button className="getStartedBtn">Get Started <span><img src={rightArrow} alt="rightArrow" /></span></button>
+          <button onClick={()=>navigate('/dashboard')} className="getStartedBtn">Go to Dashboard <span><img src={rightArrow} alt="rightArrow" /></span></button>
           <button className="watchvidBtn">
             <span>
               <img src={Play} alt="PlayBtn" />
